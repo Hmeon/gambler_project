@@ -86,7 +86,7 @@ images/screenshot-chips.png
 images/screenshot-result.png
 ```
 ```md
-![Table](images/screenshot-table.png)
+![Table](images/board.svg)
 ![Chips](images/screenshot-chips.png)
 ![Result](images/screenshot-result.png)
 ```
