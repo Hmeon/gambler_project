@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <!-- 기본 설정 -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE 브라우저 호환성 설정 -->
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1"> 
+
+   <title>DEU-Casino</title> <!-- 페이지 제목 설정 -->
+   <meta name="keywords" content=""> <!-- 키워드 설정 -->
+   <meta name="description" content=""> <!-- 설명 설정 -->
+   <meta name="author" content=""> <!-- 작성자 설정 -->
+   <!-- 부트스트랩 CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- 스타일 CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- 반응형 CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- 커스텀 스크롤바 CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!-- 폰트 설정 -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-layout">
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div> 
+   </div>
+   <div class="wrapper">
+      <div class="sidebar">
+         <!-- 사이드바 시작 -->
+         <nav id="sidebar">
+            <div id="dismiss">
+               <i class="fa fa-arrow-left"></i> <!-- 사이드바 닫기 아이콘 -->
+            </div>
+            <ul class="list-unstyled components">
+               <li class="active">
+                  <a href="main.html">Home</a> 
+               </li>
+               <li>
+                  <a href="#about">About</a> 
+               </li>
+               <li>
+                  <a href="#game">Game</a> 
+               </li>
+               <li>
+                  <a href="#customer">Dark side of casinos</a> 
+               </li>
+               <li>
+                  <a href="#contact">Conatct</a> 
+               </li>
+            </ul>
+         </nav>
+         <!-- 사이드바 종료 -->
+      </div>
+   </div>
+   <div id="content">
+      <!-- 헤더 시작 -->
+      <header>
+         <!-- 헤더 내부 -->
+         <div class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <!-- 로고 섹션 -->
+                     <div class="col-md-3 logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="main.html"><img src="images/logo.png" alt="#"></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- 메뉴 아이콘 -->
+                     <div class="col-md-9">
+                        <div class="right_header_info">
+                           <ul>
+                              <li>
+                                 <button type="button" id="sidebarCollapse">
+                                    <img src="images/menu_icon.png" alt="#" /> <!-- 메뉴 아이콘 이미지 -->
+                                 </button>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- 메인 슬라이더 섹션 -->
+      <section class="slider_section">
+         <div class="banner_main">
+            <img src="images/DEU_main.png" alt="#" /> <!-- 메인 배너 이미지 -->
+            <div class="container-fluid padding3">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="text-bg">
+
+                        <!-- "Play now" 버튼 -->
+                        <a href="#game" id="playNowBtn">Play now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- 카테고리 섹션 -->
+      <!-- 카지노 섹션 시작 -->
+      <div id="game" class="casino">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our Casino Game</h2>
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <!-- 게임 아이템 (바카라) -->
+               <div class="col-md-5 padding_bottom">
+                  <a href="baccarat.html" class="game_box_link">
+                     <div class="game_box">
+                        <figure>
+                           <img src="images/baccarat.png" alt="#" class="img-fluid" />
+                        </figure>
+                        <div class="game">
+                           <h3>BACCARAT</h3> 
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 카지노 섹션 종료 -->
+      <!-- 프로모션 및 배너 섹션 -->
+      <div class="licens">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Promotion & Banner</h2> 
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+            
+                  <div id="licens" class="carousel slide licens_Carousel" data-bs-ride="carousel">
+                     
+                     <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#licens" data-bs-slide-to="0" class="active"
+                           aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#licens" data-bs-slide-to="1"
+                           aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#licens" data-bs-slide-to="2"
+                           aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#licens" data-bs-slide-to="3"
+                           aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#licens" data-bs-slide-to="4"
+                           aria-label="Slide 5"></button>
+                     </div>
+                    
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row d-flex">
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <div class="jons">
+                                             <h4>Promotions</h4> 
+                                          </div>
+                                          <p>
+                                             배너광고는 포털사이트, 언론사 등 유저의 유입이 많은 매체를 대상으로 광고
+                                             배너를 노출하게 됩니다. 소비자가 쉽게 접할 수 있고, 비교적 짧은 시간에 많은 정보를 전할 수 있으며, 클릭 유도를 통해
+                                             홈페이지나 랜딩페이지로 유입이 가능한 광고 마케팅입니다. (여기 있는 배너 광고는 실제로 인터넷 도박 사이트에 사용되는 배너입니다.)
+                                          </p>
+                                          <a class="read_more" href="javascript:void(0)">Play Online</a> <!-- 온라인 플레이 버튼 -->
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <div class="jons">
+                                             <figure><img src="images/jons_img1.png" alt="#" /></figure> 
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- 새로운 배너들 -->
+                        <div class="carousel-item">
+                           <img src="images/banner1.gif" class="d-block resized-gif" alt="Banner 1">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="images/banner2.gif" class="d-block resized-gif" alt="Banner 2">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="images/banner3.gif" class="d-block resized-gif" alt="Banner 3">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="images/banner4.gif" class="d-block resized-gif" alt="Banner 4">
+                        </div>
+                     </div>
+                     <!-- 캐러셀 컨트롤 -->
+                     <button class="carousel-control-prev" type="button" data-bs-target="#licens" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#licens" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                     </button>
+                  </div>
+                 
+               </div>
+               <div id="about" class="col-md-12">
+                  <!-- 설명 박스 -->
+                  <div class="two_box">
+                     <div class="row d_flex">
+                        <div class="col-md-4">
+                           <div class="many_box_img">
+                              <figure><img src="images/Baccarat_Gambler.png" alt="#" /></figure> 
+                           </div>
+                        </div>
+                        <div class="col-md-8">
+                           <div class="many_box">
+                              <p>바카라(Baccarat 또는 baccara) 는 이탈리아에서 처음 만들어진 플레잉 카드를 이용한 도박 게임 중 하나로, 
+                                 미국, 캐나다, 영국, 호주, 마카오 등지 카지노에서 매우 인기있는 게임에 속한다. 뱅커(banker) 혹은 플레이어(player) 
+                                 둘 중 한 쪽을 선택하여 베팅해 어느 쪽이 9에 가까운 점수일지 대결하는 게임이다. 카지노에서 가장 단순한 것처럼 보이는 
+                                 게임이어서 인기가 많으며, 실제로 룰 자체가 홀짝 놀이에 가깝다고 보면 된다. 큰 틀에서 보면 확률이 50:50인 카드 게임이지만 
+                                 비기는 변수가 있으며 확률 자체도 카지노에 약간 유리하도록 미묘하게 조정되어있다.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 프로모션 및 배너 섹션 종료 -->
+      <!-- 고객 섹션 시작 -->
+      <div id="customer" class="customer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Dark side of casinos</h2> 
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="customer_text">
+                     <p>MIT 수학천재들의 카지노 무너뜨리기가 시작된다. 이 MIT팀이 카드카운팅을 그만두게 된 것은 라스베이거스 카지노 업체들의 감시가 아니라 그냥 돈이 안 돼서다!
+                        얘내들이 평균적으로 1인당 1년에 번 돈을 계산하니 2만 5천 달러, 한국 돈으로 연봉이 3천만원도 안되는 돈을 버는데 계속 할리가 있나. 부업으로 이 정도면 적게
+                        버는 것도 아니지 않냐고 생각할 수 있는데, 당장 매달 동부의 보스턴과 서부의 라스베가스를 여러번 오가면서 발생하는 비행기 표값과 라스베가스의 어마어마한 호텔 투숙료를
+                        생각하면 남는 게 없었을 것이다. 실제로 카드카운팅으로 게임에 미칠 수 있는 영향은 잘 해봐야 1%로 49.x% 대의 승률을 50.x 대의 승률로 올리는 수준이다.
+                        즉, 100번쯤 해야 1번 정도 더 이긴다는 소리.</p>
+                     <div class="customer_box">
+                        <i><img src="images/movie.png" alt="#" /></i>
+                        <h4>Robert Luketic : 21</h4> 
+                        <span>Bringing Down the House</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 고객 섹션 종료 -->
+      <!-- 에이전트 신청 섹션 -->
+      <div id="contact" class="Agent">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Casino Agent Application</h2> 
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+                  <form id="cochang" class="form_main">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input class="form_control" placeholder="Name" type="text" name="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_control" placeholder="Phone number" type="text" name="Phone number">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="form_control" placeholder="Email" type="text" name="Email">
+                        <div class="col-md-12">
+                           <input class="form_control" placeholder="Message" type="text" name="Message">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn" onclick="alert('지금은 에이전트 모집 기간이 아닙니다'); return false;">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <!-- 신청 폼 종료 -->
+         </div>
+      </div>
+      <!-- 에이전트 신청 섹션 종료 -->
+      <!--  푸터 시작 -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <!-- 구독 섹션 형식상 -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                     <div class="address">
+                        <h3>Subscribe Now</h3>
+                        <form class="newtetter">
+                           <button id="subscribeButton" class="submit">submit</button>
+                           <input class="tetter" placeholder="Enter your email" type="text" name="Enter your email">
+                        </form>
+                     </div>
+                  </div>
+                  <!-- 링크 및 연락처 -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="row">
+                        <!-- 링크 섹션 -->
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                           <div class="address">
+                              <h3>Links</h3> 
+                              <ul class="Menu_footer">
+                                 <li class="active"> <a href="index.html">Home</a> </li>
+                                 <li><a href="#about">About</a> </li>
+                                 <li><a href="#game">Game</a> </li>
+                                 <li><a href="#customer">dark side of casinos</a> </li>
+                                 <li><a href="#conatct">Contact</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <!-- 연락처 섹션 -->
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                           <div class="address">
+                              <h3>Contact us</h3> <!-- 섹션 제목 -->
+                              <ul class="Links_footer">
+                                 <li>문의사항 발생 시 20203078@g.deu.ac.kr로 연락주시길 바랍니다.</li> 
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--  푸터 종료 -->
+      <!-- 스크립트 추가 -->
+      <script type="text/javascript">
+         // 구독 버튼 클릭 시 알림 표시
+         document.getElementById('subscribeButton').addEventListener('click', function (event) {
+            event.preventDefault(); // 폼 제출 동작 방지
+            alert('지금은 구독 기간이 아닙니다');
+         });
+      </script>
+
+   </div>
+   <div class="overlay"></div>
+   <!-- 자바스크립트 파일들 -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+  
+   <!-- 사이드바 관련 스크립트 -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+         });
+
+         $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+         });
+
+         $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+         });
+      });
+   </script>
+   <script>
+      $(document).ready(function () {
+         $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+         });
+
+         $(".zoom").hover(function () {
+            $(this).addClass('transition');
+         }, function () {
+            $(this).removeClass('transition');
+         });
+      });
+   </script>
+   </div>
+</body>
+</html>
